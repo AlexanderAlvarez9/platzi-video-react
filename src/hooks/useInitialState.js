@@ -10,7 +10,7 @@ const useInitialState = (API) => {
     fetch(API)
       .then(response => response.json())
       .then(data => setVideos(data))
-      .catch(err => console.log(err))
+      .catch(err => console.log(err, 'fallo al hacer la peticion'))
   }, []);
   return videos
 }

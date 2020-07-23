@@ -7,11 +7,11 @@ import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
 
-const API = 'http://localhost:3000/initialState/';
+const API = 'http://localhost:3000/initalState/';
 
 import '../assets/styles/App.scss'
 
-const App = () => {
+const Home = () => {
   const initialState = useInitialState(API);
   return (
     <div className="App">
@@ -51,4 +51,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home;
